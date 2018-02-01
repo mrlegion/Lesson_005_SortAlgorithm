@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{399E60E8-502A-4051-9DDA-3BDE0A81CEEC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Base</RootNamespace>
-    <AssemblyName>Base</AssemblyName>
+    <ProjectGuid>{C413B05D-C15A-428B-BBDD-330ECE20B64D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SelectionSort</RootNamespace>
+    <AssemblyName>SelectionSort</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,30 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helper.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Selection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BubbleSort\BubbleSort.csproj">
-      <Project>{8c4ceb08-b577-4100-9327-8e000dfd5b71}</Project>
-      <Name>BubbleSort</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\InsertionSort\InsertionSort.csproj">
-      <Project>{53bf9ef4-83d8-4737-aab1-2e65c9b205e9}</Project>
-      <Name>InsertionSort</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MargeSort\MargeSort.csproj">
-      <Project>{09a81bb1-4cc6-405f-8891-af1a952e18f6}</Project>
-      <Name>MargeSort</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SelectionSort\SelectionSort.csproj">
-      <Project>{c413b05d-c15a-428b-bbdd-330ece20b64d}</Project>
-      <Name>SelectionSort</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
